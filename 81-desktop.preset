@@ -1,0 +1,12 @@
+# Common configuration for all Factory desktop variants
+# Workstation specific configuration: 80-workstation.preset
+# KDE Spin specific configuration: 80-kde.preset
+
+# disable sshd socket and sshd service by default
+disable sshd.socket
+disable sshd.service
+
+# enable cups on-demand socket activation by default
+enable cups.socket
+enable cups.path
+disable cups.service

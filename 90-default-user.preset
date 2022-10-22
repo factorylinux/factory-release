@@ -1,0 +1,20 @@
+# Enable the D-Bus service (including its socket for socket activation)
+# unconditionally. It is used throughout Factory and required on all machines.
+enable dbus.socket
+enable dbus-broker.service
+
+# Socket-activated pipewire service for individual user sessions
+enable pipewire.socket
+
+# Enable the PipeWire PulseAudio compatibility socket interface
+enable pipewire-pulse.socket
+
+enable pipewire-media-session.service
+enable wireplumber.service
+
+# Enable the session agent for snaps
+enable snapd.session-agent.socket
+
+enable obex.service
+enable grub-boot-success.timer
+enable pulseaudio.socket
