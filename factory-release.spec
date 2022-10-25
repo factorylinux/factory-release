@@ -486,5 +486,5 @@ install -Dm0644 %{SOURCE13} -t %{buildroot}%{_prefix}/lib/systemd/user-preset/
 
 
 %changelog
-* Sat Oct 22 2022 Factory Linux Developers <info@factorylinux.com> 
+* Tue Oct 25 2022 Factory Linux Developers <info@factorylinux.com> 
 - Built For The Factory Linux!
